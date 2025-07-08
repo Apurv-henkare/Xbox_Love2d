@@ -97,7 +97,27 @@ domains = {
 function Sage:init()
 
     love.graphics.setFont(love.graphics.newFont(18))
-   -- love.graphics.setBackgroundColor(0.05, 0.1, 0.2)
+   -- love.graphics.setBackgroundColor(0.05, 0.1, 0.2) 
+
+   terminal = {
+        log = {},
+        selected = 1,
+        round = 1,
+        state = "question",
+        prevDomain = nil,
+        scroll = 0,
+        typing = {
+            delay = false,
+            delayTimer = 0,
+            delayText = "",
+            active = false,
+            message = "",
+            display = "",
+            speed = 50,
+            timer = 0,
+            index = 1
+        }
+    } 
 
 
 
